@@ -1,13 +1,19 @@
-# 백업 파일
-*.zip
-
 # 개발용 스크립트
 *.py
 
-# 데이터 분석 파일
+# 데이터 분석 중간 산물
 *.tsv
 *.csv
 *.txt
+
+# 데이터 소스 문서
+*.md
+
+# 백업 파일
+*.zip
+
+# Netlify 배포 폴더 (GitHub Pages 사용으로 불필요)
+deploy/
 
 # macOS 시스템 파일
 .DS_Store
