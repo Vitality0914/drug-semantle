@@ -240,7 +240,11 @@ function refreshUI() {
     document.getElementById('history').innerHTML = '';
     return;
   }
-  const sorted = history.slice().sort((a,b) => Number(b.score) - Number(a.score));
+  const sorted = history.slice().sort((a, b) => {
+    const ds = Number(b.score) - Number(a.score);
+    if (ds !== 0) return ds;
+    return Number(a.rank) - Number(b.rank);
+  });
   const latestIdx = last ? last.idx : -1;
   document.getElementById('history').innerHTML =
     '<h3 class="section-label">유사도 순 (전체 ' + sorted.length + ')</h3>' +
