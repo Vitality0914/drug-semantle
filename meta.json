@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-04T18:20:08+0900",
+  "n_drugs": 658,
+  "weights": {
+    "major": 20,
+    "mid": 15,
+    "minor": 15,
+    "moa": 20,
+    "clinical": 20,
+    "ae": 5,
+    "ddi": 5
+  },
+  "missing_feature_files": [],
+  "similarity_method": "classification (deterministic) + token Jaccard (subagent-extracted)",
+  "model": "Claude Sonnet 4.6 via Claude Code subagents (OAuth)",
+  "notes": "Missing categories drop out and remaining weights renormalize to 100."
+}
